@@ -60,6 +60,7 @@ function guessCheck(){
         computerResponse.innerHTML = "That's right! Nice job!";
         restartForm.style.display = 'block';
         submitGuessBtn.style.display = 'none';
+        guessField.setAttribute('style', 'border-color:green;');
     }
 }
 
