@@ -1,5 +1,5 @@
 .restartForm {
-display: none;  
+  display: none;  
 }
 
 #glow {
@@ -17,44 +17,53 @@ display: none;
       text-shadow: 0 0 10px rgb(10, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px #f308082d, 0 0 40px #f308082d, 0 0 50px #f308082d
     }
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #b10303, 0 0 40px #b10303, 0 0 50px #b10303
+      text-shadow: 0 0 20px rgb(77, 1, 1), 0 0 30px #b10303, 0 0 40px #b10303, 0 0 50px #b10303
     }
   }
 
 .startGame{
-    text-align: center;
-    margin: auto;
-    width: 50%;
+  text-align: center;
+  margin: auto;
+  width: 50%;
 }
 
 .restartForm{
-    text-align: center;
-    margin: auto;
+  text-align: center;
+  margin: auto;
 }
 
-
 #guessQuestion{
-    display: block;
-    margin-bottom: 10px;
+  display: block;
+  margin-bottom: 10px;
 }
 
 #guessField{
-    display: inline-block;
-    margin:auto;
-    margin-bottom: 10px;
-    border-style:solid;
+  display: inline-block;
+  margin:auto;
+  margin-bottom: 10px;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+#guessField:focus{
+  display: inline-block;
+  margin:auto;
+  margin-bottom: 10px;
+  border-style: dotted;
+  border-radius: 5px;
+  background-color: rgb(236, 234, 234);
 }
 
 #playAgain{
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .card{
-    display: block;
-    border-style: outset;
-    border-width: 1px;
-    margin-left: 20%;
-    margin-right: 20%;
-    box-shadow: 2px 2px grey;
-    padding-bottom: 15px;
+  display: block;
+  border-style: outset;
+  border-width: 1px;
+  margin-left: 20%;
+  margin-right: 20%;
+  box-shadow: 2px 2px grey;
+  padding-bottom: 15px;
 }

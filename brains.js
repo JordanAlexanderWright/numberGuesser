@@ -61,6 +61,7 @@ function guessCheck(){
         restartForm.style.display = 'block';
         submitGuessBtn.style.display = 'none';
         guessField.setAttribute('style', 'border-color:green;');
+        guessField.setAttribute('disabled', 'true');
     }
 }
 
@@ -71,12 +72,11 @@ function finishGame(e){
     guessField.style.display = 'none';
 }
 
-// This is stupid, I wish this was a little better. Seems there isn't a built in way to Math to do this. 
+// This is stupid, I wish this was a little better. Seems there isn't a built in way for Math to do this. 
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min) + min); //The maximum is exclusive and the minimum is inclusive
   }
-
 
 // Running this to create the inital setup of the game. I actually probably should cut this since I can use the default functionality of the form submit to reset the program.
 gameSetup();
