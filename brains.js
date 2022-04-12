@@ -59,6 +59,7 @@ function guessCheck(){
     } else if (userGuess === randomNumber){
         computerResponse.innerHTML = "That's right! Nice job!";
         restartForm.style.display = 'block';
+        submitGuessBtn.style.display = 'none';
     }
 }
 
@@ -75,6 +76,5 @@ function getRandomInt(min, max) {
   }
 
 
+// Running this to create the inital setup of the game. I actually probably should cut this since I can use the default functionality of the form submit to reset the program.
 gameSetup();
-
-

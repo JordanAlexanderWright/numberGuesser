@@ -3,12 +3,12 @@ display: none;
 }
 
 #glow {
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(247, 27, 27);
     text-align: center;
-    -webkit-animation: glow 1s ease-in-out infinite alternate;
-    -moz-animation: glow 1s ease-in-out infinite alternate;
-    animation: glow 1s ease-in-out infinite alternate;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
     padding-bottom: 20px;
   }
 
@@ -47,5 +47,9 @@ display: none;
 #guessField{
     display: block;
     margin:auto;
+    margin-bottom: 10px;
+}
+
+#playAgain{
     margin-bottom: 10px;
 }
