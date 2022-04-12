@@ -48,3 +48,13 @@ display: none;
 #playAgain{
     margin-bottom: 10px;
 }
+
+.card{
+    display: block;
+    border-style: outset;
+    border-width: 1px;
+    margin-left: 25%;
+    margin-right: 25%;
+    box-shadow: 2px 2px grey;
+    padding-bottom: 15px;
+}
