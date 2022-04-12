@@ -1,0 +1,51 @@
+.restartForm {
+display: none;  
+}
+
+#glow {
+    font-size: 50px;
+    color: rgb(247, 27, 27);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+    padding-bottom: 20px;
+  }
+
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px rgb(10, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px #f308082d, 0 0 40px #f308082d, 0 0 50px #f308082d
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #b10303, 0 0 40px #b10303, 0 0 50px #b10303
+    }
+  }
+
+.startGame{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+}
+
+.restartForm{
+    text-align: center;
+    margin: auto;
+}
+
+#guessQuestion{
+    display: inline-block;
+    margin-bottom: 10px;
+    padding:0;
+    padding-left: 0;
+    padding-right: 0;
+    border-color: black;
+    border-style: dotted;
+    border-width:1px;
+
+}
+
+#guessField{
+    display: block;
+    margin:auto;
+    margin-bottom: 10px;
+}
