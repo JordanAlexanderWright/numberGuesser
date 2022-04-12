@@ -53,9 +53,9 @@ function submitGuess(e){
 
 function guessCheck(){
     if(userGuess > randomNumber){
-        computerResponse.innerHTML = 'Your guess was too high, try again';
+        computerResponse.innerHTML = `Your guess, ${userGuess}, was too high, try again`;;
     } else if (userGuess < randomNumber) {
-        computerResponse.innerHTML = 'Your guess was too low, try again';
+        computerResponse.innerHTML = `Your guess, ${userGuess}, was too low, try again`;
     } else if (userGuess === randomNumber){
         computerResponse.innerHTML = "That's right! Nice job!";
         restartForm.style.display = 'block';
@@ -68,6 +68,7 @@ function finishGame(e){
     e.preventDefault();
     computerResponse.innerHTML = 'Thanks for playing!';
     restartForm.style.display = 'none';
+    guessField.style.display = 'none';
 }
 
 // This is stupid, I wish this was a little better. Seems there isn't a built in way to Math to do this. 
