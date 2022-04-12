@@ -1,22 +1,14 @@
-// Getting the guess field
-guessField = document.querySelector('#guessField');
+// Selecting the elements I will manipulate
+const guessField = document.querySelector('#guessField'),
+    submitGuessBtn = document.querySelector('#submitGuess'),
+    guessForm = document.querySelector('startGame'),
+    computerResponse = document.querySelector('#guessQuestion'),
+    restartForm = document.querySelector('.restartForm'),
+    noButton = document.querySelector('#nope');
+
+ // Adding event listeners
 guessField.addEventListener('click', clearDefault);
-
-// Getting the submit button
-submitGuessBtn = document.querySelector('#submitGuess');
 submitGuessBtn.addEventListener('click', submitGuess);
-
-// Submit Guess Form
-guessForm = document.querySelector('startGame');
-
-// Getting field for displaying feedback as to the user's guess
-computerResponse = document.querySelector('#guessQuestion');
-
-// Getting another form to allow a user to restart the game. 
-restartForm = document.querySelector('.restartForm');
-
-// Getting button to end the game
-noButton = document.querySelector('#nope');
 noButton.addEventListener('click', finishGame)
 
 function gameSetup(){
@@ -80,3 +72,13 @@ function getRandomInt(min, max) {
 
 // Running this to create the inital setup of the game. I actually probably should cut this since I can use the default functionality of the form submit to reset the program.
 gameSetup();
+
+let a = 1,
+  b = 2,
+  c = 3;
+
+const d = 2,
+  e = 3,
+  f = 4;
+
+console.log(a, e);
